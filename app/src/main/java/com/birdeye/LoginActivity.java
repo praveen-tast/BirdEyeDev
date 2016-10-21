@@ -24,6 +24,7 @@ import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 
 public final class LoginActivity extends AppCompatActivity {
+	
   public static Intent create(Context ctx) {
     return new Intent(ctx, LoginActivity.class);
   }
@@ -102,10 +103,10 @@ public final class LoginActivity extends AppCompatActivity {
 
     mAdView.loadAd(adRequest);
 
-
     mInterstitialAd.loadAd(adRequest);
 
     mInterstitialAd.setAdListener(new AdListener() {
+		
       public void onAdLoaded() {
         showInterstitial();
       }

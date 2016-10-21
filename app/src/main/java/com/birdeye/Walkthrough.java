@@ -39,11 +39,6 @@ public class Walkthrough extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
-
-
-
         // Checking for first time launch - before calling setContentView()
 
         // Making notification bar transparent
@@ -210,6 +205,5 @@ public class Walkthrough extends Activity {
         startActivity(LoginActivity.create(this));
         finish();
     }
-
 
 }

@@ -87,6 +87,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public final class MainActivity extends AppCompatActivity {
+	
     public static
     @NonNull
     Intent create(@NonNull Context c) {
@@ -978,10 +979,7 @@ public final class MainActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-
-
                 if(!Globals.hasPaid){
-
                     enabled.setChecked(false);
                     enable(false);
                     enabled.setChecked(false);
@@ -990,15 +988,8 @@ public final class MainActivity extends AppCompatActivity {
                     System.exit(0);
                     if (SharedPref.get_savedCards1(MainActivity.this).equalsIgnoreCase("true")){
                     }
-
-
                 }
-
             }
-
         }.start();
     }
-
-
-
 }

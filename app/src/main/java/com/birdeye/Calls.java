@@ -20,6 +20,7 @@ import rx.Subscriber;
 import timber.log.Timber;
 
 public final class Calls {
+	
   public static @NonNull Observable<Result<Search>> search(@NonNull String s,
                                                            @Nullable Long since) {
     return Observable.create(sub -> {

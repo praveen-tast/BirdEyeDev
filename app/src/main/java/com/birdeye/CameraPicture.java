@@ -4,6 +4,7 @@ import android.graphics.Matrix;
 import android.support.annotation.NonNull;
 
 public final class CameraPicture {
+	
   public final @NonNull byte[] bytes;
   public final @NonNull Matrix rotate;
 
@@ -11,4 +12,5 @@ public final class CameraPicture {
     this.bytes = bytes;
     this.rotate = rotate;
   }
+  
 }

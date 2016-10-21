@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public final class Prefs {
+	
   static final RxSharedPreferences prefs =
       RxSharedPreferences.create(PreferenceManager.getDefaultSharedPreferences(App.app));
 
@@ -18,7 +19,6 @@ public final class Prefs {
   public static final Preference<String>  message1  = prefs.getString("message1", null);
   public static final Preference<String>  message2  = prefs.getString("message2", null);
   public static final Preference<String>  message3  = prefs.getString("message3", null);
-
 
   public static final Preference<String>  message4  = prefs.getString("message4", null);
   public static final Preference<String>  message5  = prefs.getString("message5", null);
@@ -42,7 +42,6 @@ public final class Prefs {
   public static final Preference<String>  message23  = prefs.getString("message23", null);
   public static final Preference<String>  message24  = prefs.getString("message24", null);
   public static final Preference<String>  message25  = prefs.getString("message25", null);
-
 
 
   public static final Preference<Facing>  facing    =
