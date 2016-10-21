@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "com.birdeye"
+        minSdkVersion 17
+        targetSdkVersion 17
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = false
+        versionCode 2
+    }
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+        release {
+            storeFile file("release.keystore")
+            storePassword "9XD3yvkDlg9B"
+            keyAlias "birdeye"
+            keyPassword "9XD3yvkDlg9B"
+        }
+    }
+    buildTypes {
+        debug.signingConfig signingConfigs.debug
+        release.signingConfig signingConfigs.release
+        release {
+            debuggable false
+            jniDebuggable true
+            renderscriptDebuggable true
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+        lintConfig file("lint.xml")
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    productFlavors {
+    }
+}
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_6
+    defaultMethods false
+    incremental true
+}
+
+dependencies {
+    compile supportDeps.appCompat
+    compile supportDeps.design
+    compile "io.reactivex:rxjava:$versions.rxjava"
+    compile "com.jakewharton.rxrelay:rxrelay:$versions.rxrelay"
+    compile('com.twitter.sdk.android:twitter:1.13.0@aar')
+    {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') { transitive = true; }
+    compile "com.jakewharton.timber:timber:$versions.timber"
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.assertj:assertj-android:1.1.1'
+    compile files('src/main/java/chartboost.jar')
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.f2prateek.rx.preferences:rx-preferences:1.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+    compile 'com.anjlab.android.iab.v3:library:1.0.32'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.anjlab.android.iab.v3:library:1.0.+'
+}
+
+configurations {
+    testCompile.exclude module: "support-annotations"
+    androidTestCompile.exclude module: "support-annotations"
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply from: "coverage.gradle"

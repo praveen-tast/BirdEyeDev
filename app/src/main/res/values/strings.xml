@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">BirdEyeCamera</string>
+    <string name="enable">Enable</string>
+    <string name="usernames">Usernames</string>
+    <string name="hashtags">Hashtags</string>
+    <string name="apply">Apply</string>
+    <string name="message_rotation">Message rotation</string>
+    <string name="message_1">Message 1</string>
+    <string name="message_2">Message 2</string>
+    <string name="message_3">Message 3</string>
+    <string name="message_4">Message 4</string>
+    <string name="message_5">Message 5</string>
+    <string name="message_6">Message 6</string>
+    <string name="message_7">Message 7</string>
+    <string name="message_8">Message 8</string>
+    <string name="message_9">Message 9</string>
+    <string name="message_10">Message 10</string>
+    <string name="message_11">Message 11</string>
+    <string name="message_12">Message 12</string>
+    <string name="message_13">Message 13</string>
+    <string name="message_14">Message 14</string>
+    <string name="message_15">Message 15</string>
+    <string name="message_16">Message 16</string>
+    <string name="message_17">Message 17</string>
+    <string name="message_18">Message 18</string>
+    <string name="message_19">Message 19</string>
+    <string name="message_20">Message 20</string>
+    <string name="message_21">Message 21</string>
+    <string name="message_22">Message 22</string>
+    <string name="message_23">Message 23</string>
+    <string name="message_24">Message 24</string>
+    <string name="message_25">Message 25</string>
+
+
+    <string name="notification_ticker">Starting BirdEye…</string>
+    <string name="notification_text">Tap to configure</string>
+    <string name="notification_title">BirdEye is running</string>
+    <string name="tweet_sent">Photo is sent</string>
+    <string name="tweet_text">Tap to open</string>
+    <string name="at_least_one_user">Please specify at lease one username or hashtag</string>
+    <string name="logout">Log out</string>
+    <string name="active_camera">Active camera</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+
+    <!-- AdMob ad unit IDs -->
+
+
+    <string name="app_ad_id">ca-app-pub-9764221160137993~8743608663</string>
+    <string name="banner_home_footer">ca-app-pub-9764221160137993/1220341860</string>
+    <string name="interstitial_full_screen">ca-app-pub-9764221160137993/2697075067</string>
+
+</resources>

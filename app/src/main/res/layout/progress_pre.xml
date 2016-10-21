@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:gravity="center|top"
+    android:background="@drawable/splash_full"
+    android:padding="10dp"
+    android:orientation="vertical">
+    
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_gravity="center|top"
+    android:gravity="center|top"
+    android:textColor="#ffffff"
+    android:text="Go Premium!!"
+    android:fontFamily="sans-serif"
+    android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"></LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text=" "
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="Buy a $2.99 Subscription and Enjoy"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="No Advertising"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="No Shutdown Timer"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Message Queue Mangement"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Security Filters"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="25 Custom Responses"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Track Multiple Hashtags and Usernames"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Unlimited Replies"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:padding="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text=" "
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/tv_pay15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#d11862"
+                android:background="@drawable/shape"
+                android:text="Get Subscription"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="15dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

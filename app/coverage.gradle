@@ -1,0 +1,54 @@
+apply plugin: "jacoco"
+apply plugin: 'findbugs'
+
+jacoco {
+  toolVersion = versions.jacoco
+}
+
+task jacocoReport(type: JacocoReport, dependsOn: "testDebugUnitTest") {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+  final jacocoExcludes = [
+      '**/R*.class',
+      '**/BuildConfig*',
+      '**/*$ViewBinder*.*',
+      'io/realm/*',
+      '**/Lambda$*.class',
+      '**/Lambda.class',
+      '**/*Lambda.class',
+      '**/*Lambda*.class',
+  ]
+
+  classDirectories = fileTree(
+      dir: './build/intermediates/classes/debug',
+      excludes: jacocoExcludes
+  )
+
+  sourceDirectories = files(android.sourceSets.main.java.srcDirs)
+  executionData = files('build/jacoco/testDebugUnitTest.exec')
+}
+
+task("openJacocoReport", type: Exec, dependsOn: jacocoReport) {
+  commandLine "open", "${buildDir}/reports/jacoco/jacocoReport/html/index.html"
+}
+
+android.applicationVariants.all { variant ->
+  final variantName = variant.name.capitalize()
+
+  final fb = task("findBugs${variantName}", type: FindBugs, dependsOn: "assemble${variantName}") {
+    classes = fileTree(dir: variant.javaCompiler.destinationDir)
+    source = files(android.sourceSets.main.java.srcDirs)
+    classpath = files()
+
+    excludeFilter = file("findbugs-exclude.xml")
+    effort = 'max'
+
+    reports {
+      xml.enabled = false
+      html.enabled = true // humans
+    }
+  }
+  tasks.check.dependsOn fb
+}

@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/splash_full"
+    android:padding="10dp"
+    android:orientation="vertical">
+    
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:text="About BirdEye Camera"
+    android:fontFamily="sans-serif"
+    android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text=" "
+        android:fontFamily="sans-serif"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:src="@drawable/logo_bird"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tv_pay15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Thank you for downloading the BirdEyeCamera app."
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="It's simple really, this app allows other people to remotely activate your phone's camera with a hashtag."
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="There are several applications for this unique app. It can be used for pure fun, just to mess around with your friends"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="You can use it to remotely view events."
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="It's really up to you to be creative with this app."
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="We really hope you like the app enough to share with your friends and also pay for it so we can continue to improve it for you. We have lots of ideas for this app, we are only just starting.
+Buy a $2.99 Subscription and Enjoy"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="No Advertising"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="No Shutdown Timer"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:text="Message Queue Mangement"
+            android:fontFamily="sans-serif"
+            android:drawableLeft="@drawable/icon_tick_small"
+            android:textStyle="italic"
+            android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Security Filters"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="25 Custom Responses"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Track Multiple Hashtags and Usernames"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:text="Unlimited Replies"
+                android:fontFamily="sans-serif"
+                android:drawableLeft="@drawable/icon_tick_small"
+                android:textStyle="italic"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

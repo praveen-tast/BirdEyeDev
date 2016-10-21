@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/shape"
+    android:padding="10dp"
+    android:orientation="vertical">
+    
+    
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="#d01862"
+    android:text="Auto ShutDown"
+    android:fontFamily="sans-serif"
+    android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d01862"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text=" "
+        android:fontFamily="sans-serif"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:src="@drawable/logo_bird"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:hint="60"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:backgroundTint="#d01862"
+                    android:foregroundTint="#d01862"
+                    android:inputType="number"
+                    android:textColorHint="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minutes"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#d01862"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+
+
+                <Button
+                    android:id="@+id/bt_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape_pink"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>
