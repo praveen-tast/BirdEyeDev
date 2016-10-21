@@ -6,6 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public final class TextViews {
+	
   public static @NonNull String trimmed(@NonNull TextView tv) {
     return tv.getText().toString().trim();
   }
@@ -14,4 +15,5 @@ public final class TextViews {
     tv.setText(s);
     tv.setSelection(s != null ? s.length() : 0);
   }
+  
 }
